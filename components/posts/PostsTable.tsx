@@ -43,7 +43,7 @@ const filteredPosts = limit ? sortedPosts.slice(0, limit) : sortedPosts;
                             <TableCell className='hidden md:table-cell'>{post.author}</TableCell>
                             <TableCell className='hidden md:table-cell text-right'>{post.date}</TableCell>
                             <TableCell>
-                                <Link href={`/post/edit/${post.id}`}>
+                                <Link href={`/posts/edit/${post.id}`}>
                                 <button className='bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 text-white text-xs rounded'>Edit</button>
                                 </Link>
                             </TableCell>
