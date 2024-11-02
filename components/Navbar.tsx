@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from "../img/logo.png"
+import { ThemeToggle } from './ThemeToggle'
+
 import { Avatar,AvatarImage,AvatarFallback } from './ui/avatar'
 import {
   DropdownMenu,
@@ -22,7 +24,9 @@ const Navbar = (props: Props) => {
         <Image src={logo} alt='paul' width={40} />
         
         </Link>
-
+    <div className="flex items-center">
+      <ThemeToggle />
+    
         <DropdownMenu>
   <DropdownMenuTrigger className='focus:outline-noneS'>
   <Avatar>
@@ -43,7 +47,7 @@ const Navbar = (props: Props) => {
     </DropdownMenuItem>
   </DropdownMenuContent>
 </DropdownMenu>
-
+</div>
     </div>
   )
 }
